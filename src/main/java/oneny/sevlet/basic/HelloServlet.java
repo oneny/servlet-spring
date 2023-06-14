@@ -12,7 +12,7 @@ import java.io.IOException;
 public class HelloServlet extends HttpServlet {
 
   // 서블릿이 호출이 되면 서비스 메서드가 호출이 된다.
-  // HTTP 요청을 통해 매핑된 URL이 호출되면 서블릿 컨테이너는 service 메서드를 실행한다.
+  // HTTP 요청을 통해 매핑된 URL이 호출되면 서블릿 컨테이너는 service 메서드를 실행한다?.
   @Override
   protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
     System.out.println("HelloServlet.service");

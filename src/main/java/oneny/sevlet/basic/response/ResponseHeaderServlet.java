@@ -27,7 +27,7 @@ public class ResponseHeaderServlet extends HttpServlet {
     content(response);
     redirect(response);
 
-    response.getWriter().write("ok");
+    response.getWriter().println("ok");
   }
 
   private void content(HttpServletResponse response) {

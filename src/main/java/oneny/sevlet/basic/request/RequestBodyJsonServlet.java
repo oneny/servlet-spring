@@ -21,7 +21,7 @@ public class RequestBodyJsonServlet extends HttpServlet {
   @Override
   protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
     ServletInputStream inputStream = request.getInputStream();
-    String messageBody = StreamUtils.copyToString(inputStream, StandardCharsets.UTF_8);
+    String messageBody = StreamUtils.copyToString(inputStream, StandardCharsets.UTF_8); // byte코드를 어떤 형식으로 변환할지를 알려줘야 한다.
 
     System.out.println("messageBody = " + messageBody);
 
